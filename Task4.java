@@ -18,4 +18,5 @@ public class Task4 {
         }
         System.out.println("You've inserted: " + input);
     }
+    sc.close();
 }

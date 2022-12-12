@@ -20,7 +20,13 @@ public class Task2 {
             try {
                 ansArray[i] = intArray[i] / d;
                 System.out.println("catchedRes1 = " + ansArray[i]);
-            } catch (Exception e) {
+            } catch (ArithmeticException e) {
+                System.out.println("Catching exception: " + e);
+                }
+                catch (IndexOutOfBoundsException e) {
+                    System.out.println("Catching exception: " + e);
+                    }
+            catch (Exception e) {
                 System.out.println("Catching exception: " + e.getClass().getSimpleName());
             }
         }

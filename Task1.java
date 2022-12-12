@@ -17,7 +17,8 @@ public class Task1 {
     public static float floatValid() {
         System.out.print("Insert float number: ");
         String input = sc.nextLine();
-        if (!input.matches("[-+]?[0-9]*\\.?[0-9]+")) {
+        String floatPattern = "[-+]?[0-9]*\\.?[0-9]+";
+        if (!input.matches(floatPattern)) {
             throw new NumberFormatException("Format corrupted");
         }
 

@@ -22,14 +22,11 @@ public class Task2 {
                 System.out.println("catchedRes1 = " + ansArray[i]);
             } catch (ArithmeticException e) {
                 System.out.println("Catching exception: " + e);
-                }
-                catch (IndexOutOfBoundsException e) {
-                    System.out.println("Catching exception: " + e);
-                    }
-            catch (Exception e) {
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("Catching exception: " + e);
+            } catch (Exception e) {
                 System.out.println("Catching exception: " + e.getClass().getSimpleName());
             }
         }
-
     }
 }
